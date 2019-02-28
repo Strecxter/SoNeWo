@@ -4,21 +4,25 @@
         <title>News</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+        <link rel="stylesheet" href="{% static 'css/main.css' %}" media="all">
+		<link rel="stylesheet" href="{% static 'css/fonts.css' %}" media="all">
+		
+		
     </head>
 	<body>
-		<div class="page-header">
-			{% if user.is_authenticated %}
-				<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-			{% endif %}
-			<h1><a href="/">News</a></h1>
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="#" accesskey="1" title="">Сервисы</a></li>
+				<li class="current_page_item"><a href="http://localhost:8000/" accesskey="1" title="">Домашняя страница</a></li>
+				<li><a href="#" accesskey="2" title="">О Проекте</a></li>
+			</ul>
 		</div>
-		<div class="content container">
-			<div class="row">
-				<div class="col-md-8">
-				{% block content %}
-				{% endblock %}
+		<div id = "portfolio-wrapper">
+			<div class="content container">
+				<div class="row">
+					{% block content %}
+					{% endblock %}
 				</div>
 			</div>
 		</div>
