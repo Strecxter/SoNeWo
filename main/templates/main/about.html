@@ -1,11 +1,11 @@
 {% load static %}
 <html>
     <head>
-        <title>News</title>
+        <title>About</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
         <link rel="stylesheet" href="{% static 'css/main.css' %}" media="all">
 		<link rel="stylesheet" href="{% static 'css/fonts.css' %}" media="all">
 		
@@ -15,8 +15,8 @@
 		<div id="menu" class="container">
 			<ul>
 				<li><a href="#" accesskey="1" title="">Сервисы</a></li>
-				<li class="current_page_item"><a href="http://localhost:8000/" accesskey="1" title="">Домашняя страница</a></li>
-				<li><a href="http://localhost:8000/about" accesskey="2" title="">О Проекте</a></li>
+				<li><a href="http://localhost:8000/" accesskey="1" title="">Домашняя страница</a></li>
+				<li class="current_page_item"><a href="http://localhost:8000/about" accesskey="2" title="">О Проекте</a></li>
 			</ul>
 		</div>
 		<div id = "portfolio-wrapper">
@@ -28,10 +28,6 @@
 						<a href="#" class="fab fa-vk"></a><br>
 						<a href="#" class="icon icon-tumblr"></a><br>
 					</div>
-				</div>
-				<div class="row">
-					{% block content %}
-					{% endblock %}
 				</div>
 			</div>
 		</div>
